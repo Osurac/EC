@@ -35,8 +35,10 @@ int setup(void)
 	//activar las correspondientes resistencias de pull-up
 	
 	/*******************************************/
-
-
+	portG_conf(6, INPUT);
+	portG_conf(7, INPUT);
+	portG_conf_pup(6, ENABLE);
+	portG_conf_pup(7, ENABLE);
 
 	Delay(0);
 	return 0;
@@ -51,6 +53,14 @@ int loop(void)
 		// hay que apagar ambos leds
 		// También hay que comutar la dirección del movimiento del led rotante
 		// representado por el campo direction de la variable RL
+		led1_off();
+		led2_off();
+
+		if(RL.direction == 0){
+			RL.direction = 1;
+		}else{
+			RL.direction = 0;
+		}
 	}
 
 	if (buttons & BUT2) {
@@ -60,6 +70,12 @@ int loop(void)
 		// representado por el campo moving de la variable RL, y en caso de
 		// ponerlo en marcha debemos reiniciar el campo iter al valor del campo
 		// speed.
+
+		if(RL.direction == 0){
+			RL.direction = 1;
+		}else{
+			RL.direction = 0;
+		}
 	}
 
 	if (RL.moving) {
