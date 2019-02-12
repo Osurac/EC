@@ -152,9 +152,11 @@ int portG_conf_pup(int pin, enum enable st)
 	if(st == ENABLE){
 		// COMPLETAR: poner el pin de rPUPG indicado por el parametro pin al valor adecuado,
 		// para activar la resistencia de pull-up
+		rPUPG &= ~(0x1 << pin);
 	}else{
 		// COMPLETAR: poner el pin de rPUPG indicado por el parametro pin al valor adecuado,
 		// para desactivar la resistencia de pull-up
+		rPUPG |= (0x1 << pin);
 	}
 	return 0;
 
