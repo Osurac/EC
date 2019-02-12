@@ -49,7 +49,7 @@ int portB_write(int pin, enum digital val)
 
 int portG_conf(int pin, enum port_mode mode)
 {
-	int pos  = pin*2;
+	int pos = pin*2;
 
 	if (pin < 0 || pin > 7)
 		return -1; // indica error
@@ -115,8 +115,10 @@ int portG_write(int pin, enum digital val)
 
 	if (val){
 		// COMPLETAR: poner en rPDATG el bit indicado por pin a 1
+		rPDATG |= (0x1 << pin);
 	}else{
 		// COMPLETAR: poner en rPDATG el bit indicado por pin a 0
+		rPDATG &= (0x1 << pin);
 	}
 	return 0;
 }
