@@ -13,9 +13,13 @@ int portB_conf(int pin, enum port_mode mode)
 		// COMPLETAR: poner en rPCONB el bit indicado por pin a 1 para que por
 		// dicho pin en el puerto B salga la señal correspondiente del
 		// controlador de memoria
+
+		rPCONB |= (0x1 << pin);
+
 	}else if (mode == OUTPUT){
 		// COMPLETAR: poner en rPCONB el bit indicado por pin a 0 para que dicho
 		// pin sea un pin de salida
+		rPCONB &= ~(0x1 << pin);
 	}else{
 		ret = -1; // indica error
 	}
@@ -32,8 +36,11 @@ int portB_write(int pin, enum digital val)
 
 	if (val){
 		// COMPLETAR: poner en rPDATB el bit indicado por pin a 1
+		rPDATB |= (0x1 << pin);
+
 	}else{
 		// COMPLETAR: poner en rPDATB el bit indicado por pin a 0
+		rPDATB |= ~(0x1 << pin);
 	}
 	return 0;
 }
