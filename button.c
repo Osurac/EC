@@ -32,6 +32,17 @@ unsigned int read_button(void)
 	//del pin 6 y el bit 1 representa el estado del botón del pin 7 (a 1 si
 	//están pulsados a 0 si no lo están).
 	
+	portG_read(6, &val); //Osu dice: Leemos el pin 6
+
+	if(val == LOW){
+		buttons |= 0x1;
+	}
+
+	portG_read(6, &val); //Osu dice: Leemos el pin 7
+
+		if(val == LOW){
+			buttons |= 0x2;
+	}
 
 	return buttons;
 }
