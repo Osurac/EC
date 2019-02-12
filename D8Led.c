@@ -68,22 +68,20 @@ void D8Led_init(void)
     LED8ADDR = ~0 ;
 }
 
-void D8Led_segment(int value){
-	if( (value >= 0) && (value < 8) ){
-
-		}
-	// COMPLETAR: debemos escribir en el display (LED8ADDR) el valor
-			// correcto para que se ilumine el segmento que está en la posición
-			// value del array Segmentes. Hay que tener en cuente que el display
-			// usa lógica invertida (0 enciende, 1 apaga).
-
+void D8Led_segment(int value)
+{
+	if( (value >= 0) && (value < 8) )
+		// COMPLETAR: debemos escribir en el display (LED8ADDR) el valor
+		// correcto para que se ilumine el segmento que está en la posición
+		// value del array Segmentes. Hay que tener en cuente que el display
+		// usa lógica invertida (0 enciende, 1 apaga).
 }
 
-void D8Led_digit(int value){
-	if( (value >= 0) && (value < 16) ){}
+void D8Led_digit(int value)
+{
+	if( (value >= 0) && (value < 16) )
 		// COMPLETAR: debemos escribir en el display (LED8ADDR) el valor
 		// correcto para que se ilumine el dígito que está en la posición
 		// value del array Digits. Hay que tener en cuente que el display
 		// usa lógica invertida (0 enciende, 1 apaga).
-
 }

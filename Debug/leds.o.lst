@@ -471,35 +471,35 @@
  2089              	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 leds.c
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1718   .bss:00000000 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1719   .bss:00000000 status
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1722   .text:00000000 $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1725   .text:00000000 leds_init
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:2055   .text:000001ec leds_display
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1754   .text:00000028 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1758   .text:0000002c $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1761   .text:0000002c led1_on
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1796   .text:00000068 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1800   .text:0000006c $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1803   .text:0000006c led1_off
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1838   .text:000000a8 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1842   .text:000000ac $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1845   .text:000000ac led2_on
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1880   .text:000000e8 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1884   .text:000000ec $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1887   .text:000000ec led2_off
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1922   .text:00000128 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1926   .text:0000012c $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1929   .text:0000012c led1_switch
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1964   .text:00000168 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1968   .text:0000016c $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:1971   .text:0000016c led2_switch
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:2006   .text:000001a8 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:2010   .text:000001ac $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:2013   .text:000001ac leds_switch
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:2048   .text:000001e8 $d
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:2052   .text:000001ec $a
-C:\Users\Osurac\AppData\Local\Temp\ccBTHVaw.s:2085   .text:00000218 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1718   .bss:00000000 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1719   .bss:00000000 status
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1722   .text:00000000 $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1725   .text:00000000 leds_init
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:2055   .text:000001ec leds_display
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1754   .text:00000028 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1758   .text:0000002c $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1761   .text:0000002c led1_on
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1796   .text:00000068 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1800   .text:0000006c $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1803   .text:0000006c led1_off
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1838   .text:000000a8 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1842   .text:000000ac $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1845   .text:000000ac led2_on
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1880   .text:000000e8 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1884   .text:000000ec $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1887   .text:000000ec led2_off
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1922   .text:00000128 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1926   .text:0000012c $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1929   .text:0000012c led1_switch
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1964   .text:00000168 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1968   .text:0000016c $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:1971   .text:0000016c led2_switch
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:2006   .text:000001a8 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:2010   .text:000001ac $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:2013   .text:000001ac leds_switch
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:2048   .text:000001e8 $d
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:2052   .text:000001ec $a
+C:\Users\Osurac\AppData\Local\Temp\cctSl76E.s:2085   .text:00000218 $d
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

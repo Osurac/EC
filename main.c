@@ -46,14 +46,14 @@ int loop(void)
 
 	if (buttons & BUT1) {
 		// COMPLETAR: utilizando la interfaz para los leds definida en leds.h
-		// hay que conmutar el led1
+		// hay que apagar ambos leds
 		// También hay que comutar la dirección del movimiento del led rotante
 		// representado por el campo direction de la variable RL
 	}
 
 	if (buttons & BUT2) {
 		// COMPLETAR: utilizando la interfaz para los leds definida en leds.h
-		// hay que conmutar el led2
+		// Incrementar contador de pulsaciones. Si es par, conumtar led1. Si es impar, conmutar el led2.
 		// También hay que comutar el estado de movimiento del led rotante
 		// representado por el campo moving de la variable RL, y en caso de
 		// ponerlo en marcha debemos reiniciar el campo iter al valor del campo

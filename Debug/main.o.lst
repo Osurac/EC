@@ -232,16 +232,16 @@
  2872              	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2733   .data:00000000 $d
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2736   .data:00000000 RL
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2743   .text:00000000 $a
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2746   .text:00000000 setup
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2785   .text:00000040 $d
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2789   .text:00000044 $a
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2792   .text:00000044 loop
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2838   .text:0000009c $d
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2842   .text:000000a0 $a
-C:\Users\Osurac\AppData\Local\Temp\ccfAdQ8T.s:2845   .text:000000a0 main
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2733   .data:00000000 $d
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2736   .data:00000000 RL
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2743   .text:00000000 $a
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2746   .text:00000000 setup
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2785   .text:00000040 $d
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2789   .text:00000044 $a
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2792   .text:00000044 loop
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2838   .text:0000009c $d
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2842   .text:000000a0 $a
+C:\Users\Osurac\AppData\Local\Temp\cchaaOng.s:2845   .text:000000a0 main
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS
