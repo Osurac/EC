@@ -56,11 +56,7 @@ int loop(void)
 		led1_off();
 		led2_off();
 
-		if(RL.direction == 0){
-			RL.direction = 1;
-		}else{
-			RL.direction = 0;
-		}
+		RL.direction = ~RL.direction;
 	}
 
 	if (buttons & BUT2) {
@@ -71,11 +67,27 @@ int loop(void)
 		// ponerlo en marcha debemos reiniciar el campo iter al valor del campo
 		// speed.
 
-		if(RL.direction == 0){
-			RL.direction = 1;
+		//No se de donde se saca el contador.
+
+		int contadorMagico = 0;
+
+		if(contadorMagico%2){
+			led2_switch();
 		}else{
-			RL.direction = 0;
+			led1_switch();
 		}
+
+		if(RL.moving == 0){
+
+			RL.moving = 1;
+			RL.iter = RL.speed;
+
+		}else{
+			RL.moving = 0;
+		}
+
+		RL.direction = ~RL.direction;
+
 	}
 
 	if (RL.moving) {
@@ -88,6 +100,23 @@ int loop(void)
 			// las 6 primeras posiciones en el array Segmentes del display de 8
 			// segmentos, por lo que position debe estar siempre entre 0 y 5.
 			
+			if(RL.direction == 0){
+
+				if(RL.position != 5){
+					RL.position++;
+				}else{
+					RL.position = 0;
+				}
+
+			}else{
+				if(RL.position != 0){
+					RL.position--;
+				}else{
+					RL.position = 5;
+				}
+			}
+
+			D8_Led_segment(RL.position);
 		}
 	}
 
