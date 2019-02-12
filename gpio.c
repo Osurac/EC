@@ -134,7 +134,7 @@ int portG_read(int pin, enum digital* val)
 		return -1; // indica error
 	/*COMPLETAR: true si está a 1 en rPDATG el pin indicado por el parámetro pin*/
 
-	if(rPCONG & (0x3 << pos)){
+	if(rPDATG & (0x1 << pos)){
 		*val = HIGH;
 	}else{
 		*val = LOW;
