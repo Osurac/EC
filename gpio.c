@@ -58,20 +58,34 @@ int portG_conf(int pin, enum port_mode mode)
 		case INPUT:
 			// COMPLETAR: poner en rPCONG 00 a partir de la posición pos para
 			// configurar como pin de entrada el pin indicado por el parámetro pin
+			//Osu dice: rPCONG 00
+
+			rPCONG &= ~(0x1 << pos);
+			rPCONG &= ~(0x1 << (pos + 1));
+
 			break;
 		case OUTPUT:
 			// COMPLETAR: poner en rPCONG 01 a partir de la posición pos para
 			// configurar como pin de salida el pin indicado por el parámetro pin
+			//Osu dice: rPCONG 01
+			rPCONG |= ~(0x1 << pos);
+			rPCONG &= ~(0x1 << (pos + 1));
 			break;
 		case SIGOUT:
 			// COMPLETAR: poner en rPCONG 10 a partir de la posición pos para
 			// que salga la señal interna correspondiente por el pin indicado
 			// por el parámetro pin
+			//Osu dice: rPCONG 10
+			rPCONG &= ~(0x1 << pos);
+			rPCONG |= ~(0x1 << (pos + 1));
 			break;
 		case EINT:
 			// COMPLETAR: poner en rPCONG 11 a partir de la posición pos para
 			// habilitar la generación de interrupciones externas por el pin
 			// indicado por el parámetro pin
+			//Osu dice: rPCONG 11
+			rPCONG |= ~(0x1 << pos);
+			rPCONG |= ~(0x1 << (pos + 1));
 			break;
 		default:
 			return -1;
