@@ -116,7 +116,7 @@ int loop(void)
 				}
 			}
 
-			D8_Led_segment(RL.position);
+			D8Led_segment(RL.position);
 		}
 	}
 

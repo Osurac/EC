@@ -53,48 +53,48 @@ END GROUP
  *(COMMON)
                 0x0c10007c                Image_ZI_Limit = .
 
-.text           0x0c10007c      0xa24
+.text           0x0c10007c      0xf84
  *(.text*)
- .text          0x0c10007c       0x64 ./D8Led.o
+ .text          0x0c10007c       0xdc ./D8Led.o
                 0x0c10007c                D8Led_init
                 0x0c1000a0                D8Led_segment
-                0x0c1000c0                D8Led_digit
- .text          0x0c1000e0       0x2c ./button.o
-                0x0c1000e0                read_button
- .text          0x0c10010c      0x36c ./gpio.o
-                0x0c10010c                portB_conf
-                0x0c100184                portB_write
-                0x0c1001e8                portG_conf
-                0x0c100270                portG_eint_trig
-                0x0c1002a0                portG_write
-                0x0c100348                portG_read
-                0x0c100408                portG_conf_pup
- .text          0x0c100478       0xd0 ./init.o
-                0x0c100478                start
- .text          0x0c100548      0x21c ./leds.o
-                0x0c100548                leds_init
-                0x0c100574                led1_on
-                0x0c1005b4                led1_off
-                0x0c1005f4                led2_on
-                0x0c100634                led2_off
-                0x0c100674                led1_switch
-                0x0c1006b4                led2_switch
-                0x0c1006f4                leds_switch
-                0x0c100734                leds_display
- .text          0x0c100764       0xb8 ./main.o
-                0x0c100764                setup
-                0x0c1007a8                loop
-                0x0c100804                main
- .text          0x0c10081c      0x138 ./utils.o
-                0x0c10081c                Delay
- .text          0x0c100954      0x148 c:/users/osurac/desktop/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2\libgcc.a(_divsi3.o)
-                0x0c100954                __divsi3
-                0x0c100954                __aeabi_idiv
-                0x0c100a7c                __aeabi_idivmod
- .text          0x0c100a9c        0x4 c:/users/osurac/desktop/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2\libgcc.a(_dvmd_tls.o)
-                0x0c100a9c                __aeabi_idiv0
-                0x0c100a9c                __aeabi_ldiv0
-                0x0c100aa0                PROVIDE (end, .)
+                0x0c1000fc                D8Led_digit
+ .text          0x0c100158       0x7c ./button.o
+                0x0c100158                read_button
+ .text          0x0c1001d4      0x604 ./gpio.o
+                0x0c1001d4                portB_conf
+                0x0c10029c                portB_write
+                0x0c100358                portG_conf
+                0x0c100520                portG_eint_trig
+                0x0c100550                portG_write
+                0x0c10064c                portG_read
+                0x0c100710                portG_conf_pup
+ .text          0x0c1007d8       0xd0 ./init.o
+                0x0c1007d8                start
+ .text          0x0c1008a8      0x298 ./leds.o
+                0x0c1008a8                leds_init
+                0x0c1008ec                led1_on
+                0x0c10092c                led1_off
+                0x0c10096c                led2_on
+                0x0c1009ac                led2_off
+                0x0c1009ec                led1_switch
+                0x0c100a2c                led2_switch
+                0x0c100a6c                leds_switch
+                0x0c100aac                leds_display
+ .text          0x0c100b40      0x23c ./main.o
+                0x0c100b40                setup
+                0x0c100bb4                loop
+                0x0c100d64                main
+ .text          0x0c100d7c      0x138 ./utils.o
+                0x0c100d7c                Delay
+ .text          0x0c100eb4      0x148 c:/users/osurac/desktop/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2\libgcc.a(_divsi3.o)
+                0x0c100eb4                __divsi3
+                0x0c100eb4                __aeabi_idiv
+                0x0c100fdc                __aeabi_idivmod
+ .text          0x0c100ffc        0x4 c:/users/osurac/desktop/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2\libgcc.a(_dvmd_tls.o)
+                0x0c100ffc                __aeabi_idiv0
+                0x0c100ffc                __aeabi_ldiv0
+                0x0c101000                PROVIDE (end, .)
 START GROUP
 LOAD c:/users/osurac/desktop/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2\libgcc.a
 LOAD c:/users/osurac/desktop/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib\libg.a
@@ -104,44 +104,44 @@ LOAD c:/users/osurac/desktop/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib
 END GROUP
 OUTPUT(P2.elf elf32-littlearm)
 
-.glue_7         0x0c100aa0        0x0
+.glue_7         0x0c101000        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x0c100aa0        0x0
+.glue_7t        0x0c101000        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x0c100aa0        0x0
+.vfp11_veneer   0x0c101000        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x0c100aa0        0x0
+.v4_bx          0x0c101000        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.debug_abbrev   0x00000000      0x332
+.debug_abbrev   0x00000000      0x385
  .debug_abbrev  0x00000000       0x88 ./D8Led.o
- .debug_abbrev  0x00000088       0x77 ./button.o
- .debug_abbrev  0x000000ff       0xb7 ./gpio.o
- .debug_abbrev  0x000001b6       0x14 ./init.o
- .debug_abbrev  0x000001ca       0x6b ./leds.o
- .debug_abbrev  0x00000235       0x98 ./main.o
- .debug_abbrev  0x000002cd       0x65 ./utils.o
+ .debug_abbrev  0x00000088       0x79 ./button.o
+ .debug_abbrev  0x00000101       0xb7 ./gpio.o
+ .debug_abbrev  0x000001b8       0x14 ./init.o
+ .debug_abbrev  0x000001cc       0x8c ./leds.o
+ .debug_abbrev  0x00000258       0xc8 ./main.o
+ .debug_abbrev  0x00000320       0x65 ./utils.o
 
-.debug_info     0x00000000      0x714
+.debug_info     0x00000000      0x7ac
  .debug_info    0x00000000       0xdf ./D8Led.o
- .debug_info    0x000000df       0x81 ./button.o
- .debug_info    0x00000160      0x283 ./gpio.o
- .debug_info    0x000003e3       0x63 ./init.o
- .debug_info    0x00000446      0x112 ./leds.o
- .debug_info    0x00000558      0x138 ./main.o
- .debug_info    0x00000690       0x84 ./utils.o
+ .debug_info    0x000000df       0x84 ./button.o
+ .debug_info    0x00000163      0x283 ./gpio.o
+ .debug_info    0x000003e6       0x63 ./init.o
+ .debug_info    0x00000449      0x150 ./leds.o
+ .debug_info    0x00000599      0x18f ./main.o
+ .debug_info    0x00000728       0x84 ./utils.o
 
-.debug_line     0x00000000      0x664
- .debug_line    0x00000000       0x5d ./D8Led.o
- .debug_line    0x0000005d       0x83 ./button.o
- .debug_line    0x000000e0       0xbf ./gpio.o
- .debug_line    0x0000019f       0x63 ./init.o
- .debug_line    0x00000202       0x82 ./leds.o
- .debug_line    0x00000284      0x375 ./main.o
- .debug_line    0x000005f9       0x6b ./utils.o
+.debug_line     0x00000000      0x6b7
+ .debug_line    0x00000000       0x6d ./D8Led.o
+ .debug_line    0x0000006d       0x89 ./button.o
+ .debug_line    0x000000f6       0xdd ./gpio.o
+ .debug_line    0x000001d3       0x63 ./init.o
+ .debug_line    0x00000236       0x88 ./leds.o
+ .debug_line    0x000002be      0x38e ./main.o
+ .debug_line    0x0000064c       0x6b ./utils.o
 
 .debug_macinfo  0x00000000    0x1f6b0
  .debug_macinfo
@@ -181,7 +181,7 @@ OUTPUT(P2.elf elf32-littlearm)
                 0x000001ac       0x1c ./utils.o
 
 .debug_pubtypes
-                0x00000000       0xb4
+                0x00000000       0xe7
  .debug_pubtypes
                 0x00000000       0x12 ./D8Led.o
  .debug_pubtypes
@@ -189,11 +189,11 @@ OUTPUT(P2.elf elf32-littlearm)
  .debug_pubtypes
                 0x00000030       0x43 ./gpio.o
  .debug_pubtypes
-                0x00000073       0x12 ./leds.o
+                0x00000073       0x2c ./leds.o
  .debug_pubtypes
-                0x00000085       0x1d ./main.o
+                0x0000009f       0x36 ./main.o
  .debug_pubtypes
-                0x000000a2       0x12 ./utils.o
+                0x000000d5       0x12 ./utils.o
 
 .debug_aranges  0x00000000       0xe0
  .debug_aranges
@@ -211,7 +211,7 @@ OUTPUT(P2.elf elf32-littlearm)
  .debug_aranges
                 0x000000c0       0x20 ./utils.o
 
-.debug_str      0x00000000      0x2a1
+.debug_str      0x00000000      0x2b0
  .debug_str     0x00000000       0x82 ./D8Led.o
                                  0x8f (size before relaxing)
  .debug_str     0x00000082       0x28 ./button.o
@@ -219,10 +219,10 @@ OUTPUT(P2.elf elf32-littlearm)
  .debug_str     0x000000aa       0xc2 ./gpio.o
                                 0x115 (size before relaxing)
  .debug_str     0x0000016c       0x73 ./leds.o
-                                 0xc3 (size before relaxing)
- .debug_str     0x000001df       0x96 ./main.o
-                                0x113 (size before relaxing)
- .debug_str     0x00000275       0x2c ./utils.o
+                                 0xf3 (size before relaxing)
+ .debug_str     0x000001df       0xa5 ./main.o
+                                0x15b (size before relaxing)
+ .debug_str     0x00000284       0x2c ./utils.o
                                  0x68 (size before relaxing)
 
 .comment        0x00000000       0x2a
