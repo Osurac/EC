@@ -76,7 +76,8 @@ void D8Led_segment(int value)
 		// value del array Segmentes. Hay que tener en cuente que el display
 		// usa lógica invertida (0 enciende, 1 apaga).
 
-		LED8ADDR = ~Segments[value];
+		LED8ADDR = strb(~Segments[value]);
+		//LED8ADDR = ~Segments[value];
 }
 
 void D8Led_digit(int value)
@@ -87,5 +88,6 @@ void D8Led_digit(int value)
 		// value del array Digits. Hay que tener en cuente que el display
 		// usa lógica invertida (0 enciende, 1 apaga).
 
-		LED8ADDR = ~Digits[value];
+		LED8ADDR = strb(~Digits[value]);
+		//LED8ADDR = ~Digits[value];
 }

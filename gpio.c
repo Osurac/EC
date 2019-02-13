@@ -51,6 +51,7 @@ int portG_conf(int pin, enum port_mode mode)
 {
 	int pos = pin*2;
 
+
 	if (pin < 0 || pin > 7)
 		return -1; // indica error
 
